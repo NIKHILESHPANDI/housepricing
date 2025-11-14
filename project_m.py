@@ -88,6 +88,8 @@ scaler=StandardScaler()
 X_train=scaler.fit_transform(X_train)
 
 X_test=scaler.transform(X_test)
+import pickle 
+pickle.dump(scaler,open('scaling.pkl','wb'))
 
 X_train
 
